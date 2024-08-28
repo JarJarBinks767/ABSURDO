@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <!-- Passo inicial -->
+        <div class="passo ativo" id="passo-0">
+            <img src="cenario-passo0.png" alt="Cena da biblioteca">
+            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
+            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
+        </div>
+
+        <!-- Passo 1: Rio de Janeiro -->
+        <div class="passo" id="passo-1">
+            <img src="cenario-passo4-voltar-casa.png" alt="Pico da Tijuca">
+            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+
+        <!-- Passo 2: Pernambuco -->
+        <div class="passo" id="passo-2">
+            <img src="cenario-passo11-cidade-perdida.png" alt="Olinda">
+            <p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista em um dos pontos turísticos da cidade. Por qual você começa?</p>
+            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
+            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
+        </div>
+
+        <!-- Passo 3: Pico da Tijuca -->
+        <div class="passo" id="passo-3">
+            <img src="Imagi69.png" alt="Olinda">
+            <p>No topo do Pico da Tijuca, você encontra uma marca misteriosa em uma pedra. Essa marca parece ser um mapa antigo que leva a um local específico. Você decide seguir o mapa?</p>
+            <button class="btn-proximo" data-proximo="7">Sim, seguir o mapa</button>
+            <button class="btn-proximo" data-proximo="8">Não, procurar ajuda na cidade</button>
+        </div>
+
+        <!-- Passo 4: Desistir no Rio de Janeiro -->
+        <div class="passo" id="passo-4">
+            <p>Você decide desistir e voltar para casa. Embora tenha sido uma jornada curta, você promete que um dia voltará para continuar a busca pela cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+
+        <!-- Passo 5: Igrejas antigas em Olinda -->
+        <div class="passo" id="passo-5">
+            <p>Após investigar as igrejas antigas, você encontra um livro escondido em uma das capelas. O livro contém uma nova pista que leva a uma caverna nas proximidades. Você decide ir até a caverna?</p>
+            <button class="btn-proximo" data-proximo="9">Sim, ir até a caverna</button>
+            <button class="btn-proximo" data-proximo="10">Não, explorar outro ponto turístico</button>
+        </div>
+
+        <!-- Passo 6: Praias próximas em Olinda -->
+        <div class="passo" id="passo-6">
+            <p>Enquanto explora as praias, você encontra uma garrafa com uma mensagem dentro. A mensagem sugere que a próxima pista está em um farol perto da praia. Você decide ir até o farol?</p>
+            <button class="btn-proximo" data-proximo="11">Sim, ir até o farol</button>
+            <button class="btn-proximo" data-proximo="12">Não, voltar para Olinda</button>
+        </div>
+
+        <!-- Passo 7: Seguir o mapa -->
+        <div class="passo" id="passo-7">
+            <p>Seguindo o mapa, você encontra uma entrada secreta para uma caverna. Dentro da caverna, você descobre um artefato antigo que pode levar você mais perto da cidade perdida. Você decide continuar a busca?</p>
+            <button class="btn-proximo" data-proximo="13">Sim, continuar a busca</button>
+            <button class="btn-proximo" data-proximo="14">Não, retornar para casa</button>
+        </div>
+
+        <!-- Passo 8: Procurar ajuda na cidade -->
+        <div class="passo" id="passo-8">
+            <p>Ao procurar ajuda na cidade, você encontra um especialista em histórias locais que fornece novas informações sobre a cidade perdida. Com essas novas pistas, você está pronto para continuar sua jornada.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+
+        <!-- Passo 9: Ir até a caverna -->
+        <div class="passo" id="passo-9">
+            <p>Na caverna, você encontra uma entrada secreta para um túnel subterrâneo. O túnel leva a um antigo templo que pode ser a chave para encontrar a cidade perdida. Você decide entrar no templo?</p>
+            <button class="btn-proximo" data-proximo="15">Sim, entrar no templo</button>
+            <button class="btn-proximo" data-proximo="16">Não, sair da caverna</button>
+        </div>
+
+        <!-- Passo 10: Explorar outro ponto turístico -->
+        <div class="passo" id="passo-10">
+            <p>Explorando outro ponto turístico, você não encontra pistas adicionais. A busca pode ser mais difícil do que parecia. Talvez seja melhor revisar a carta inicial e reavaliar suas opções.</p>
+            <button class="btn-proximo" data-proximo="2">Voltar a Olinda</button>
+        </div>
+
+        <!-- Passo 11: Ir até o farol -->
+        <div class="passo" id="passo-11">
+            <p>No farol, você encontra um mapa antigo preso na parede. Esse mapa mostra uma rota direta para a cidade perdida, mas a jornada será longa e desafiadora. Você decide seguir o mapa?</p>
+            <button class="btn-proximo" data-proximo="17">Sim, seguir a rota</button>
+            <button class="btn-proximo" data-proximo="18">Não, voltar para Olinda</button>
+        </div>
+
+        <!-- Passo 12: Voltar à cidade -->
+        <div class="passo" id="passo-12">
+            <p>Voltando à cidade, você revisa suas anotações e percebe que pode ter perdido uma pista importante. É hora de reconsiderar suas estratégias e voltar ao início.</p>
+            <button class="btn-proximo" data-proximo="2">Voltar a Olinda</button>
+        </div>
+
+        <!-- Passo 13: Continuar a busca -->
+        <div class="passo" id="passo-13">
+            <p>Você continua a busca com o artefato antigo. Ele é a chave para abrir uma câmara secreta que contém um mapa detalhado da localização da cidade perdida. O destino está cada vez mais próximo!</p>
+            <button class="btn-proximo" data-proximo="19">Seguir o novo mapa</button>
+            <button class="btn-proximo" data-proximo="20">Voltar e reavaliar</button>
+        </div>
+
+        <!-- Passo 14: Retornar para casa -->
+        <div class="passo" id="passo-14">
+            <p>Você decide retornar para casa. Embora a busca pela cidade perdida tenha sido uma aventura emocionante, você sabe que poderá tentar novamente no futuro.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+
+        <!-- Passo 15: Entrar no templo -->
+        <div class="passo" id="passo-15">
+            <p>No templo, você descobre uma entrada secreta que leva diretamente à cidade perdida. Finalmente, sua jornada chegou ao fim e você encontra a cidade repleta de riquezas e mistérios!</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+
+        <!-- Passo 16: Sair da caverna -->
+        <div class="passo" id="passo-16">
+            <p>Saindo da caverna, você percebe que pode ter perdido uma grande oportunidade. A busca pela cidade perdida pode ter que esperar para uma próxima vez.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+
+        <!-- Passo 17: Seguir a rota -->
+        <div class="passo" id="passo-17">
+            <p>Seguindo a rota indicada no mapa, você enfrenta diversos desafios, mas finalmente chega à cidade perdida. Sua jornada foi um sucesso e você explora os tesouros escondidos!</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+
+        <!-- Passo 18: Voltar para Olinda -->
+        <div class="passo" id="passo-18">
+            <p>Voltando para Olinda, você revisa suas pistas e considera outras possibilidades. A cidade perdida ainda está ao alcance, e você está mais preparado para encontrá-la na próxima vez.</p>
+            <button class="btn-proximo" data-proximo="2">Voltar a Olinda</button>
+        </div>
+
+        <!-- Passo 19: Seguir o novo mapa -->
+        <div class="passo" id="passo-19">
+            <p>Seguindo o novo mapa, você chega a uma entrada secreta para a cidade perdida. Sua jornada foi longa, mas finalmente você chega ao destino, cheio de aventuras e descobertas!</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+
+        <!-- Passo 20: Voltar e reavaliar -->
+        <div class="passo" id="passo-20">
+            <p>Voltando e reavaliando suas opções, você encontra novas pistas e estratégias. Sua próxima tentativa pode ser mais bem-sucedida na busca pela cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="0">Voltar ao início</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
